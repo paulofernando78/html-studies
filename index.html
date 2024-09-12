@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>HTML (Studies)</title>
+  </head>
+  <body>
+    <div class="line-break">
+      <div>
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+      </div>
+      <hr />
+      <p>Paragraph</p>
+      <hr />
+
+      <!-- Forms -->
+      <div class="line-break">
+        <h2>Forms</h2>
+        <div class="flex-forms">
+          <!--
+            O atributo "name" nos formulários HTML é usado para identificar os dados de um campo quando ele é enviado para o servidor. Quando um formulário é submetido, o navegador envia os dados dos campos como pares de chave-valor, onde a chave é o valor do atributo name e o valor é o que foi inserido pelo usuário no campo correspondente.
+
+            O atributo "value", dentro de um formulário HTML, define o valor associado a um campo de entrada (input, select, textarea, etc.). Dependendo do tipo de campo, o atributo value pode ter diferentes funções:
+
+            O atributo "method" em um formulário HTML define como os dados do formulário serão enviados ao servidor. Ele especifica o método HTTP usado para a solicitação ao servidor. Existem dois valores principais para o method: GET e POST. A escolha entre eles afeta como os dados são transmitidos e processados no back-end.
+            -->
+
+          <!-- General -->
+          <form action="./" class="line-break card">
+            <!-- Text -->
+            <label>
+              <p><b>Text</b></p>
+              <input type="text" name="text" />
+            </label>
+
+            <!-- Placeholder / CPF -->
+            <label>
+              <p><b>Placeholder / CPF</b></p>
+              <input type="text" placeholder="000.000.000-00" name="cpf" />
+            </label>
+
+            <!-- Required -->
+            <label>
+              <p><b>Required</b></p>
+              <input type="text" name="textR" required />
+            </label>
+
+            <!-- Disabled -->
+            <label>
+              <p><b>Disabled</b></p>
+              <input type="text" disabled />
+            </label>
+
+            <!-- Number -->
+            <label>
+              <p><b>Number</b></p>
+              <input type="number" name="number" />
+            </label>
+
+            <!-- Date -->
+            <label>
+              <p><b>Date</b></p>
+              <input type="date" name="date" />
+            </label>
+
+            <button>Send</button>
+          </form>
+
+          <!-- Email / Password *NAME -->
+          <form action="./" class="line-break card">
+            <label>
+              <p><b>Email</b></p>
+              <input type="email" name="email" required />
+            </label>
+            <label>
+              <p><b>Password</b></p>
+              <input type="password" name="password" required />
+            </label>
+            <button>Log in</button>
+          </form>
+
+          <!-- Radio / Checkbox / Select -->
+          <form action="./" class="line-break card" style="width: 180px;">
+            <div>
+              <p><b>Radio</b></p>
+              <label class="flex"
+                ><input type="radio" name="radio" value="true" /> Answer
+                1</label
+              >
+              <label class="flex"
+                ><input type="radio" name="radio" value="false" /> Answer
+                2</label
+              >
+            </div>
+            <div>
+              <p><b>Checkbox</b></p>
+              <label class="flex"
+                ><input type="checkbox" name="checkbox" value="option 1" />
+                Checkbox 1
+              </label>
+              <label class="flex"
+                ><input type="checkbox" name="checkbox" value="option 2" />
+                Checkbox 2
+              </label>
+              <label class="flex"
+                ><input type="checkbox" name="checkbox" value="option 3" />
+                Checkbox 3
+              </label>
+            </div>
+            <label>
+              <p><b>Select</b></p>
+              <select name="select">
+                <option value="option 1">Option 1</option>
+                <option value="option 2">Option 2</option>
+                <option value="option 3">Option 3</option>
+              </select>
+            </label>
+            <button>Send</button>
+          </form>
+        </div>
+      </div>
+      <label>
+        <p><b>Text area</b></p>
+        <textarea name="notes" cols="50" rows="10"></textarea>
+      </label>
+      <hr />
+      <h2><b>Links</b></h2>
+      <a href="www.apple.com"><p>Apple</p></a>
+      <a href="www.google.com"><p>Google</p></a>
+      <a href="#contato1">Contanto 1</a>
+      <a href="#contato2">Contanto 2</a>
+      <a href="www.cambridge.org">Cambridge</a>
+      <a href="https://en.wikipedia.org/wiki/.org">Wikupedia</a>
+      <hr />
+      <h2><b>Section</b></h2>
+      <section>
+        <h1>h1</h1>
+        <h2>h2</h2>
+      </section>
+      <h2><b>Article</b> :last-child</h2>
+      <article>
+        <p>Paragraph 1</p>
+        <p>Paragraph 2</p>
+        <p>Paragraph 3</p>
+      </article>
+      <h2><b>Article</b> h4 + h4 (margin-top)</h2>
+      <article>
+        <h4>Paragraph 1</h4>
+        <h4>Paragraph 2</h4>
+        <h4>Paragraph 3</h4>
+      </article>
+    </div>
+  </body>
+</html>

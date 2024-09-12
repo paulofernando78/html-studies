@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: white;
+  padding: 10px;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: black;
+  }
+  h1,
+  h2,
+  h3,
+  p,
+  label {
+    color: white;
+  }
+}
+
+.line-break {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.card {
+  /* border: 1px solid black; */
+  box-shadow: 0 0 5px 0.1px gray;
+  padding: 6px;
+  border-radius: 4px;
+  width: fit-content;
+}
+
+input {
+  /* font-size: 1.2rem; */
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 3px;
+  display: block;
+}
+
+select {
+  padding: 3px;
+  border-radius: 3px;
+}
+
+textarea {
+  border: 0;
+  box-shadow: 0 0 5px 0.1px gray;
+  border-radius: 4px;
+}
+
+button {
+  padding: 5px;
+}
+
+.flex {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.flex-forms {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+[required] {
+  border: 1px solid red;
+}
+
+[href="www.google.com"] {
+  border: 2px solid green;
+  padding: 5px;
+  width: fit-content;
+  border-radius: 4px;
+}
+
+[href^="#"] {
+  border: 2px solid blueviolet;
+  padding: 5px;
+  width: fit-content;
+  border-radius: 4px;
+}
+
+[href$=".org"] {
+  border: 2px solid orange;
+  padding: 5px;
+  width: fit-content;
+  border-radius: 4px;
+}
+
+section {
+  background-color: red;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+section > h1 {
+  background-color: yellow;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+section > h2 {
+  background-color: green;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+article {
+  background-color: lightgreen;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+article > p {
+  margin-bottom: 20px;
+}
+
+article > p:last-child {
+  margin-bottom: 0;
+}
+
+h4 + h4 {
+  margin-top: 20px;
+}
