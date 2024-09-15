@@ -1,11 +1,21 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   background: white;
   padding: 10px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+img[src$=".jpg, .png"] {
+  border-radius: 5px;
 }
 
 @media (prefers-color-scheme: dark) {
